@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.theme.LoadingScreen">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#bbe38d"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/loading_animation"
+            android:layout_width="match_parent"
+            android:layout_height="485dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp"
+            android:background="@color/lightGreen"
+            android:padding="16dp"
+            android:radius="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="175dp"
+                android:text="@string/analyzing"
+                android:textColor="@color/darkGreen"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="152dp"
+                android:text="@string/wait"
+                android:textColor="#1d4f11"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="206dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cropspt_loading" />
+
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/tip_bar"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/rounded_background"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center|bottom"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/leaf"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/cropspt_leaf" />
+
+                <TextView
+                    android:id="@+id/title_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center|start"
+                    android:layout_marginEnd="37dp"
+                    android:layout_toEndOf="@+id/leaf"
+                    android:text="@string/tip_of_the_day"
+                    android:textColor="#1d4f11"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tips_rotation"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center|bottom"
+                android:layout_marginTop="50dp"
+                android:textAlignment="center"
+                android:textColor="#1d4f11"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+
+

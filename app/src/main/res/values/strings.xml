@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">cropspt_final</string>
+    <string-array name="tips_array">
+        <item>Keep lettuce in the crisper drawer of your refrigerator to maintain its crispness and freshness.</item>
+        <item>Wrap lettuce in paper towels before storing it in a resealable plastic bag to absorb excess moisture and prevent wilting.</item>
+        <item>Ensure that the lettuce leaves are dry before storing them, as excess moisture can cause them to spoil faster.</item>
+        <item>Wash and trim lettuce just before using it rather than in advance to prevent moisture buildup, which can lead to spoilage.</item>
+        <item>Keep lettuce away from ethylene-producing fruits like apples and bananas, as exposure to ethylene can cause lettuce to ripen and spoil more quickly.</item>
+    </string-array>
+    <string name="tip_of_the_day">Green Tip of the Day:</string>
+    <string name="wait">Please wait!</string>
+    <string name="analyzing">Analyzing your Greens...</string>
+</resources>
